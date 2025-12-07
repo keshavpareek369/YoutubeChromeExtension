@@ -1,8 +1,8 @@
 // WARNING: DO NOT HARDCODE THIS KEY FOR PRODUCTION.
 // For a Chrome extension, the user should input the key via a settings page
 // and store it in chrome.storage.
-const GEMINI_API_KEY = "AIzaSyBI8A4dK0gbEea-sYj_KPjbkS0lGvL68eE";
-const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
+const GEMINI_API_KEY = "Your_gemini_api";
+const GEMINI_API_URL = "gemini_api_url";
 
 chrome.runtime.onInstalled.addListener(() => {
   console.log("YouTube Transcript Chatbot Installed.");
@@ -16,4 +16,5 @@ chrome.runtime.onMessage.addListener(
       return true; // Indicates an asynchronous response
     }
   }
+
 );
