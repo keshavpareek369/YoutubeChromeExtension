@@ -1,6 +1,3 @@
-// WARNING: DO NOT HARDCODE THIS KEY FOR PRODUCTION.
-// For a Chrome extension, the user should input the key via a settings page
-// and store it in chrome.storage.
 const GEMINI_API_KEY = "Your_gemini_api";
 const GEMINI_API_URL = "gemini_api_url";
 
@@ -18,3 +15,4 @@ chrome.runtime.onMessage.addListener(
   }
 
 );
+
