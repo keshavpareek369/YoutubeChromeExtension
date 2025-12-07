@@ -1,6 +1,6 @@
 (async () => {
-  const apiKey = "AIzaSyBI8A4dK0gbEea-sYj_KPjbkS0lGvL68eE"; // <-- Replace with your actual Gemini API key
-  const url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
+  const apiKey = "Your_api_key"; // <-- Replace with your actual Gemini API key
+  const url = "Api_key_url ";
 
   const response = await fetch(url, {
     method: "POST",
@@ -25,4 +25,5 @@
   const content = result.candidates?.[0]?.content?.parts?.[0]?.text || 'No content found.';
   console.log(content);
   
+
 })();
